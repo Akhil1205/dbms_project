@@ -38,11 +38,14 @@ After logging in succesfully,
 if Profiles category is choosen,it shows the usernames of the people that has logged in.
 
 We have to chose the category as cop to 
+
+
 `
 Add crime Details`
 `
 View crime Details
 `
+
 `
 Update Crime Details
 `
