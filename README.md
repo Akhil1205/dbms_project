@@ -70,6 +70,31 @@ Delete Crime details
 - The deleted fir is stored in the fir_backup table by using trigger
 
 
+# INSTALLATION AND RUNNING 
+
+XAMPP AND STREAMLIT HAS TO BE INSTALLED 
+
+
+APACHEA ND MYSQL SHOULD BE RUNNING BEFORE IMPLEMENTATION
+
+Code to start the Application
+
+`streamlit run app.py`
+
+`app.py` is the home page
+
+
+After running the application Home page will be displayed.
+
+Select the login option from the select queue and then Do as indicated in the functionalities.
+
+
+
+
+
+
+
+
 
 
 
