@@ -12,7 +12,7 @@ The project has five tables
 - fir
 - fir_backup
 
-Usertable stores the username and password 
+Usertable stores the username and password ;
 crime table contains the crime_id,crime_type,crime_date and crime_place.
 criminal table contains crime_id,criminal_id,past_crimes,jail_name,criminal_name.
 fir table contains fir_id,crime_id,fir_writer,fir_description,date_of_fir.
