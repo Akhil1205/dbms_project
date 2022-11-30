@@ -22,10 +22,9 @@ fir_backup is same as fir that stores the fir information as backup if we delete
 # FUNCTIONALITIES OF THE PROJECT
 
 The Project has 
-'''sh
+'
 Login page
-'''
-
+'
 After logging in succesfully,
 if Profiles category is choosen,it shows the usernames of the people that has logged in.
 
