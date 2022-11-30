@@ -31,10 +31,14 @@ if Profiles category is choosen,it shows the usernames of the people that has lo
 
 We have to chose the category as cop to 
 `
-Add crime Details
+Add crime Details`
+`
 View crime Details
+`
+`
 Update Crime Details
-Delete crime Details
+`
+`Delete crime Details
 `
 
 
