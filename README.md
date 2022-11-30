@@ -33,7 +33,7 @@ fir_backup is same as fir that stores the fir information as backup if we delete
 XAMPP AND STREAMLIT HAS TO BE INSTALLED 
 
 
-APACHEA ND MYSQL SHOULD BE RUNNING BEFORE IMPLEMENTATION
+APACHE ND MYSQL SHOULD BE RUNNING BEFORE IMPLEMENTATION
 
 Code to start the Application
 
@@ -90,3 +90,45 @@ Delete Crime details
 - Fir with the selected crime id can be deleted 
 - The deleted fir is stored in the fir_backup table by using trigger
 
+### TRIGGER
+`
+DELIMITER $$
+CREATE TRIGGER fir_trigger BEFORE DELETE ON fir
+FOR EACH ROW
+BEGIN
+IF EXISTS (SELECT * FROM fir WHERE crime_id=OLD.crime_id)
+THEN INSERT INTO fir_backup SELECT * FROM fir WHERE crime_id=OLD.crime_id;
+END IF;
+END$$
+DELIMITER;
+`
+
+### PROCEDURE AND FUNCTIONS
+
+`
+DELIMITER $$
+CREATE PROCEDURE rai(IN id int,OUT des varchar(10))
+BEGIN
+DECLARE d1,d2 DATE;
+select crime_date INTO d1 from crime where crime_id=id;
+select date_of_fir INTO d2 from fir where crime_id=id;
+if datediff(d1,d2)>0 then 
+set des="No";
+else
+set des="yes";
+END IF;
+END $$
+DELIMITER ;
+`
+`
+DELIMITER $
+CREATE FUNCTION find_delay_fir(id int)
+RETURNS int
+BEGIN
+DECLARE d1,d2 DATE;
+select date_of_fir into d2 from fir where crime_id=id;
+select crime_date into d1 from crime where crime_id=id;
+RETURN (day(d1)-day(d2) + 30*(MONTH(d1)-MONTH(d2))+365*(YEAR(d1)-YEAR(d2)));
+END$
+DELIMITER ;
+`
