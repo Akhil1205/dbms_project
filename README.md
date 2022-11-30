@@ -83,7 +83,7 @@ Add crime details
 
 View crime details
 - In this section the input data is represented and we can check the delay between the crime date and date of fir by selecting the crime id of the case 
-- If the fir is entered before the crime has been comitted , warning message will be shown else the delay of fir is hown
+- If the fir is entered before the crime has been comitted , warning message will be shown else the delay of fir is shown
 
 Update Crime details
 - we can update the criminal details here and the changes can be seen below the Update button
