@@ -93,6 +93,10 @@ Delete Crime details
 - The deleted fir is stored in the fir_backup table by using trigger
 
 ### TRIGGER
+
+Adds the fir data which has been deleted into fir _backup table
+
+
 `
 DELIMITER $$
 CREATE TRIGGER fir_trigger BEFORE DELETE ON fir
@@ -106,6 +110,9 @@ DELIMITER;
 `
 
 ### PROCEDURE AND FUNCTIONS
+
+Procedure `rai` gives the output as No if date_of_fir is older than crime_date which doesnot make sense(fir is entered before crime commited) else gives Yes as output
+
 
 `
 DELIMITER $$
@@ -123,6 +130,7 @@ END $$
 DELIMITER ;
 `
 
+Function `find_delay_fir` gives the delay between crime_date and date_of_fir (like 30 days..15 days...)
 
 
 `
