@@ -72,6 +72,8 @@ Update Crime Details
 
 `Delete crime Details
 `
+- TRIGGERS , FUNCTIONS AND PROCEDURES should be executed in mysql server to implement in the project
+
 
 # FUNCTIONALITIES OF THE PROJECT
 
@@ -135,3 +137,4 @@ RETURN (day(d1)-day(d2) + 30*(MONTH(d1)-MONTH(d2))+365*(YEAR(d1)-YEAR(d2)));
 END$
 DELIMITER ;
 `
+
