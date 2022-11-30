@@ -42,6 +42,7 @@ We have to chose the category as cop to
 
 `
 Add crime Details`
+
 `
 View crime Details
 `
@@ -49,6 +50,7 @@ View crime Details
 `
 Update Crime Details
 `
+
 `Delete crime Details
 `
 
