@@ -1,3 +1,4 @@
+
 # DBMS PROJECT
 # PROJECT TITLE:
 
@@ -27,7 +28,25 @@ fir table contains fir_id,crime_id,fir_writer,fir_description,date_of_fir.
 fir_backup is same as fir that stores the fir information as backup if we delete it.
 
 
-# FUNCTIONALITIES OF THE PROJECT
+# INSTALLATION AND RUNNING 
+
+XAMPP AND STREAMLIT HAS TO BE INSTALLED 
+
+
+APACHEA ND MYSQL SHOULD BE RUNNING BEFORE IMPLEMENTATION
+
+Code to start the Application
+
+`streamlit run app.py`
+
+`app.py` is the home page
+
+
+After running the application Home page will be displayed.
+
+Select the login option from the select queue and then Do as indicated in the functionalities.
+
+
 
 The Project has 
 `
@@ -54,6 +73,8 @@ Update Crime Details
 `Delete crime Details
 `
 
+# FUNCTIONALITIES OF THE PROJECT
+
 
 Add crime details
 - We can add crime , criminal and fir details individually
@@ -68,34 +89,4 @@ Update Crime details
 Delete Crime details
 - Fir with the selected crime id can be deleted 
 - The deleted fir is stored in the fir_backup table by using trigger
-
-
-# INSTALLATION AND RUNNING 
-
-XAMPP AND STREAMLIT HAS TO BE INSTALLED 
-
-
-APACHEA ND MYSQL SHOULD BE RUNNING BEFORE IMPLEMENTATION
-
-Code to start the Application
-
-`streamlit run app.py`
-
-`app.py` is the home page
-
-
-After running the application Home page will be displayed.
-
-Select the login option from the select queue and then Do as indicated in the functionalities.
-
-
-
-
-
-
-
-
-
-
-
 
